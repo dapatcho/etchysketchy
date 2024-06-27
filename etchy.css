@@ -1,7 +1,9 @@
 .page-container {
   background-color: gray;
+  color: green;
 }
 
 .grid-pixel :hover {
   background-color: black;
+  
 }

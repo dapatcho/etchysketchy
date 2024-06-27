@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Browser Based Drawing Pad</title>
-  <link rel="stylesheet" href="etchy.css">
-  <script scr="sketchy.js" defer></script>
-</head>
-<body>
-  <div id="page-container">
-    <div id="grid-container"></div>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Based Drawing Pad</title>
+    <link rel="stylesheet" href="etchy.css" />
+  </head>
+  <body>
+    <div>
+      <h2>is this on?</h2>
+    </div>
+    <div id="page-container">
+      <div id="grid-container"></div>
+    </div>
+    <script src="sketchy.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        gridMaker(16);
+      });
+    </script>
+  </body>
 </html>
