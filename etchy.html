@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="etchy.css" />
   </head>
   <body>
-    <div>
-      <h2>is this on?</h2>
+
+    <div class="page-container">
+      <div class="heading">
+        <h2>is this on?</h2>
+        <button class="reset">reset me</button>
+      </div>
+      <div class="grid-container" id="grid-container"></div>
     </div>
-    <div id="page-container">
-      <div id="grid-container"></div>
-    </div>
-    <script src="sketchy.js" defer></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         gridMaker(16);
       });
     </script>
+    <script src="sketchy.js" defer></script>
   </body>
 </html>
